@@ -9,7 +9,6 @@ const ImageGenerationForm = () => {
   const [input, setinput] = useState(false);
 
   const handleSubmit = async (event) => {
-
     event.preventDefault();
 
     if (!input || loading) {
@@ -32,7 +31,7 @@ const ImageGenerationForm = () => {
 
     if (!response.ok) {
       alert("error occured while generation the image");
-      setLoading(false)
+      setLoading(false);
       // throw new Error("Failed to generate image");
     }
 
